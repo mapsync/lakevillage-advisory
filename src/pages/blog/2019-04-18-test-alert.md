@@ -7,3 +7,5 @@ description: this is a test
 This is s test
 
 [Please see map for affected area](/map?layer=Advisory&feature=1)
+
+[Please map number 2](/map/?layer=Advisory&feature=1)
