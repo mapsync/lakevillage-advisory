@@ -23,9 +23,9 @@ export const ContactPageTemplate = ({ name, address, city_state_zip, phone, fax,
             Phone
           </div>
           <div className="card-body">
-            T: {phone}<br />
+            T: <a href={"tel:1-" + phone}>{phone}</a><br /><br />
             F: {fax}<br />
-            E: {email}
+            E: <a href={"mailto:" + email}>{email}</a>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <ContactPageTemplate
-        name={frontmatter.name} 
+        name={frontmatter.name}
         address={frontmatter.address}
         city_state_zip={frontmatter.city_state_zip}
         phone={frontmatter.phone}
